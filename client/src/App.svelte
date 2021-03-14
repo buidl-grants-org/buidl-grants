@@ -1,13 +1,23 @@
 <script>
-	export let name;
+    import ApplicationForm from './ApplicationForm.svelte';
 </script>
 
+<header class="page-header">
+    <h1>Buidl Grants</h1>
+</header>
+
 <main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+    <p>where am i</p>
+    <ApplicationForm />
 </main>
 
+ 
 <style>
+
+    header {
+        text-align: left;   
+    }
+
 	main {
 		text-align: center;
 		padding: 1em;
@@ -15,11 +25,18 @@
 		margin: 0 auto;
 	}
 
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
+    h1 {
 		font-size: 4em;
-		font-weight: 100;
+		color: #212931;
+        font-family: "Merriweather",Georgia,serif;
+    }
+
+	p {
+        font-family: "Merriweather",Georgia,serif;
+        font-weight: 300;
+		color: #212931;
+		font-size: 1rem;
+		line-height: 2.375;
 	}
 
 	@media (min-width: 640px) {
